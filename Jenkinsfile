@@ -2,9 +2,6 @@
 
 pipeline {
    agent any
-   environment{
-      DOCKERHUB_CREDENTIALS  = credential("dockerhub-credential")
-   }
     stages {
         stage('Build App') { 
             steps {
