@@ -13,8 +13,9 @@ pipeline {
         }
          stage('Build Docker') { 
             steps {
-                 withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'dockerhub-credential', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+                  withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'dockerhub-credential2', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
 
+               
                
                     sh "cp ./target/*.jar  ./docker/app.jar"
                     sh "docker build -t jojiisac/news-api docker/"
