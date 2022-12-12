@@ -15,8 +15,9 @@ pipeline {
             steps {
                
                 sh "cp ./target/*.jar  ./docker/app.jar"
-                sh "sudo docker build -t jojiisac/news-api docker/"
-                sh "docker push jojiisac/news-api"
+                sh "docker build -t jojiisac/news-api docker/"
+                 sh "docker images"
+                 sh "docker push jojiisac/news-api"
                
             }
         }
