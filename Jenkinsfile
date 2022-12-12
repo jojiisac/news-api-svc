@@ -2,6 +2,9 @@
 
 pipeline {
    agent any
+   environment{
+      DOCKERHUB_CREDENTIALS  = credential("dockerhub-credential")
+   }
     stages {
         stage('Build App') { 
             steps {
@@ -17,6 +20,8 @@ pipeline {
                 sh "cp ./target/*.jar  ./docker/app.jar"
                 sh "docker build -t jojiisac/news-api docker/"
                  sh "docker images"
+                 sh " docker login -u ${DOCKERHUB_CREDENTIALS_USR}  -p ${DOCKERHUB_CREDENTIALS_PSW}  "
+
                  sh "docker push jojiisac/news-api"
                
             }
