@@ -1,0 +1,108 @@
+{
+  "items": [
+    {
+      "intervalType": "DAYS",
+      "startTime": "2022-12-06T10:05:23.653",
+      "endTime": "2022-12-07T10:05:23.653",
+      "count": 6,
+      "news": [
+        {
+          "title": "3 effective tips for finding the best mold manufacturer online",
+          "address": "https://visual.ly/community/Infographics/business/3-effective-tips-finding-best-mold-manufacturer-online"
+        },
+        {
+          "title": "lululemon holiday specials are still live—shop best-selling leggings, hoodies and bras",
+          "address": "https://www.usatoday.com/story/money/reviewed/2022/12/06/lululemon-holiday-specials-leggings/10844495002/"
+        },
+        {
+          "title": "Claws Mail Keyboard Shortcuts",
+          "address": "https://www.maketecheasier.com/cheatsheet/claws-mail-keyboard-shortcuts/"
+        },
+        {
+          "title": "Amazon has a copy of sold-out viral pink Zara dress for HALF the price",
+          "address": "https://www.dailymail.co.uk/femail/article-11507035/Amazon-copy-sold-viral-pink-Zara-dress-HALF-price.html"
+        },
+        {
+          "title": "设计模式——23种设计模式 - 不吃紫菜",
+          "address": "https://www.cnblogs.com/buchizicai/p/16956964.html"
+        },
+        {
+          "title": "Архитектуры на акторах: системы с моделью",
+          "address": "https://dou.ua/forums/topic/41118/"
+        }
+      ]
+    },
+    {
+      "intervalType": "DAYS",
+      "startTime": "2022-12-05T10:05:23.653",
+      "endTime": "2022-12-06T10:05:23.653",
+      "count": 6,
+      "news": [
+        {
+          "title": "Kétszer annyi antidepresszánst szednek a magyarok, mint 20 évvel ezelőtt",
+          "address": "https://hvg.hu/tudomany/20221205_mentalis_egeszseg_antidepresszans_depresszio_gyogyszer_magyar_statisztika_oecd_europa"
+        },
+        {
+          "title": "Como ligar a cobrar | Fixo, celular e outro DDD",
+          "address": "https://canaltech.com.br/educacao/como-ligar-a-cobrar-fixo-celular-e-outro-ddd/"
+        },
+        {
+          "title": "Insider Buying in 3D Systems, Live Nation and 5 Others",
+          "address": "https://fintel.io/news/insider-buying-in-3d-systems-live-nation-and-5-others-251"
+        },
+        {
+          "title": "What Does the Low Back Pain Future Look Like After a Lumbar Disc Herniation (LDH)?",
+          "address": "https://www.blogger.com/comment.g?blogID=2003705960781611123&postID=7901215186025954837&isPopup=true&bpli=1"
+        },
+        {
+          "title": "Insider Buying in 3D Systems, Live Nation and 5 Others",
+          "address": "https://biztoc.com/x/744923bc5380a0ab"
+        },
+        {
+          "title": "Brasil x Coreia do Sul: veja como fica trânsito e horário dos serviços públicos em Campinas para o jogo desta segunda pela Copa do Catar",
+          "address": "https://g1.globo.com/sp/campinas-regiao/noticia/2022/12/05/brasil-x-coreia-do-sul-veja-como-fica-transito-e-horario-dos-servicos-publicos-em-campinas-para-o-jogo-desta-segunda-pela-copa-do-catar.ghtml"
+        }
+      ]
+    },
+    {
+      "intervalType": "DAYS",
+      "startTime": "2022-12-04T10:05:23.653",
+      "endTime": "2022-12-05T10:05:23.653",
+      "count": 4,
+      "news": [
+        {
+          "title": "スタートアップ開発 「DDDの次の一手」としてのチームコーチング｜little_hands｜note",
+          "address": "https://note.com/majackyy/n/ne4bcbd2957a2"
+        },
+        {
+          "title": "MasaFramework -- 领域驱动设计 - 磊_磊",
+          "address": "https://www.cnblogs.com/zhenlei520/p/16945150.html"
+        },
+        {
+          "title": "Ruby/Rails開発する際に知っておきたい省略用語集 2022年末版｜TechRacho by BPS株式会社",
+          "address": "https://techracho.bpsinc.jp/morimorihoge/2022_12_05/124363"
+        },
+        {
+          "title": "Import project's subpackages in Python",
+          "address": "https://stackoverflow.com/questions/74681243/import-projects-subpackages-in-python"
+        }
+      ]
+    },
+    {
+      "intervalType": "DAYS",
+      "startTime": "2022-12-03T10:05:23.653",
+      "endTime": "2022-12-04T10:05:23.653",
+      "count": 2,
+      "news": [
+        {
+          "title": "Tyson Fury v Derek Chisora: world heavyweight title fight – live",
+          "address": "https://www.theguardian.com/sport/live/2022/dec/03/boxing-tyson-fury-v-derek-chisora-world-heavyweight-title-fight-live"
+        },
+        {
+          "title": "GitLab self-instance on RedOs",
+          "address": "https://habr.com/ru/post/701738/#post-content-body"
+        }
+      ]
+    }
+  ]
+}

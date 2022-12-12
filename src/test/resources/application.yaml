@@ -1,0 +1,20 @@
+server:
+  port: 8081
+news:
+  interval:
+    defaultDuration :  12
+    defaultInterval : "WEEKS"
+  source:
+    address: "http://joji.isac.id"
+    authKey: "key"
+    offLineMode: true
+  cacheLife: 0
+  cacheEnabled : false
+  showOldDataOnFailure: true
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER

@@ -1,0 +1,20 @@
+server:
+  port: 8081
+news:
+
+  interval:
+    defaultDuration :  6
+    defaultInterval : "HOURS"
+  source:
+    address: "https://newsapi.org/v2/everything"
+    authKey: "<Token>"
+    offLineMode: true
+  cacheLife: 123
+  offlineMode : true
+  showOldDataOnFailure: true
+
+repo: true
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
