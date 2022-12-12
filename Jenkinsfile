@@ -16,13 +16,17 @@ pipeline {
         }
          stage('Build Docker') { 
             steps {
-               
-                sh "cp ./target/*.jar  ./docker/app.jar"
-                sh "docker build -t jojiisac/news-api docker/"
-                 sh "docker images"
-                 sh " docker login -u ${DOCKERHUB_CREDENTIALS_USR}  -p ${DOCKERHUB_CREDENTIALS_PSW}  "
+                 withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'dockerhub-credential', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
 
-                 sh "docker push jojiisac/news-api"
+               
+                    sh "cp ./target/*.jar  ./docker/app.jar"
+                    sh "docker build -t jojiisac/news-api docker/"
+                    sh "docker images"
+
+                    sh " docker login -u ${USERNAME}  -p ${PASSWORD}  "
+
+                    sh "docker push jojiisac/news-api"
+                 }
                
             }
         }
