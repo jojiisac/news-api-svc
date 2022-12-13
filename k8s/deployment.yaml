@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: newsapi
-        image: jojiisacth/news-api:latest
+        image: "jojiisacth/news-api:v6"
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
