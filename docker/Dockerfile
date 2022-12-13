@@ -8,5 +8,5 @@ COPY startapi.sh /opt/app/startapi.sh
 RUN chmod +x /opt/app/startapi.sh
 
 EXPOSE 8080
-# java -jar /opt/app/app.jar
-ENTRYPOINT ["/opt/app/startapi.sh"]
+
+ENTRYPOINT ["sh" ,"/opt/app/startapi.sh"]
