@@ -1,12 +1,11 @@
 
 FROM adoptopenjdk/openjdk11:alpine-jre
-# cd /opt/app
-WORKDIR /opt/app
 
+RUN mkdir /opt/app
 # cp target/spring-boot-web.jar /opt/app/app.jar
-COPY app.jar app.jar
-COPY startapi.sh startapi.sh
-RUN chmod +x startapi.sh
+COPY app.jar /opt/app/
+COPY startapi.sh /opt/app/startapi.sh
+RUN chmod +x /opt/app/startapi.sh
 
 EXPOSE 8080
 # java -jar /opt/app/app.jar
