@@ -1,5 +1,6 @@
 
 
+echo "hello web :)"
 if [ -f "/config/configfile" ]; 
 then
     echo "Starting with  supplied  config file  :) "
