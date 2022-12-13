@@ -1,0 +1,26 @@
+
+pipeline {
+    agent any
+     
+     environment {
+         // The MY_KUBECONFIG environment variable will be assigned
+         // the value of a temporary file.  For example:
+         //   /home/user/.jenkins/workspace/cred_test@tmp/secretFiles/546a5cf3-9b56-4165-a0fd-19e2afe6b31f/kubeconfig.txt
+         MY_KUBECONFIG = credentials('kubeconfigfile')
+         MY_APP_SECRET = credentials('appsecret')
+     }
+     stages {
+         stage('Example stage 1') {
+             steps {
+                    
+                       
+                        sh (" /var/lib/kubectl apply -f ./k8s/deployment.yaml --kubeconfig $MY_KUBECONFIG")
+                        sh (" /var/lib/kubectl apply -f $MY_APP_SECRET ")
+                        sh (" /var/lib/kubectl apply -f ./k8s/service.yaml  --kubeconfig $MY_KUBECONFIG")
+                 
+             }
+         }
+     }
+ }
+ 
+ 
