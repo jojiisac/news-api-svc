@@ -18,7 +18,7 @@ pipeline {
                
                
                     sh "cp ./target/*.jar  ./docker/app.jar"
-                    sh "docker build -t jojiisacth/news-api docker/"
+                    sh "docker clean build -t jojiisacth/news-api docker/"
                     sh "docker images"
 
                     sh " docker login -u ${USERNAME}  -p ${PASSWORD}  "
