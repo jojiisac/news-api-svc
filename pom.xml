@@ -11,6 +11,8 @@
 	<properties>
 
 		<application.version>0.0.6-SNAPSHOT</application.version>
+
+
 		<java.version>11</java.version>
 	</properties>
 	<groupId>co.joji</groupId>
@@ -30,6 +32,13 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.12.0</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			<version>2.7.6</version>
+		</dependency>
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-boot-starter</artifactId>

@@ -18,12 +18,16 @@ pipeline {
                
                     sh "rm ./docker/app.jar"
                     sh "cp ./target/*.jar  ./docker/app.jar"
+
                     sh "docker build -t jojiisacth/news-api:v6 docker/"
+
                     sh "docker images"
 
                     sh " docker login -u ${USERNAME}  -p ${PASSWORD}  "
 
+
                     sh "docker push jojiisacth/news-api:v6"
+
                  }
                
             }
