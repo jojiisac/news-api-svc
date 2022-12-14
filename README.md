@@ -14,6 +14,6 @@ for build run and deploy please
 See the below image for sequense diagram
 
 
-[![sequense dia]("/docs\diagrams-FullFlow.jpg")](sequense diagrams)
+[![sequense dia](/docs/diagrams-FullFlow.jpg)](sequense diagrams)
 
 
