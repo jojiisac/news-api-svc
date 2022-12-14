@@ -79,7 +79,7 @@ contents:  KUBECONFIG of the k8s cluster  where you wanted to deploy the apps
 2.  Updated config file secret of the of the app   
 name "appsecret"
 type :  "secretfile"
-contents: Read below sesction how to create secrets file 
+contents: Read below section how to create secrets file 
 3.  Dockerhub Credential
     name : dockerhub-credential2
     type : Username and password type  
@@ -90,3 +90,13 @@ Createa pipeline job using  new github repo  pipeline script file "Jenkinsfile"
 
 2. deploy pipeline 
 Create a pipeline job using  new github repo  pipeline script file "JenkinsDeploy"
+
+
+
+### How to create secrets file
+
+1. update the file 'src/main/resources/application.yaml' with actual appkey
+2. base64encode the contents of the updated file
+3. open the file docs/secret.yaml
+4. replace  base64encodeof_application.yaml_file   with base64 value of step2
+5. your file is ready  now , use the this file to craete  secret of type 'FILE' in jenkis   
