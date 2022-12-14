@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "6a644171-0d5a-4e1d-89d3-2063d23ffcbc",
+		"name": "NewsApi   2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search with 1 minutes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/news/api/v1/search/?q=ddd&N=3&interval=MINUTES",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"news",
+						"api",
+						"v1",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "ddd"
+						},
+						{
+							"key": "N",
+							"value": "3"
+						},
+						{
+							"key": "interval",
+							"value": "MINUTES"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search with 1 day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/news/api/v1/search/?q=ddd&N=1&interval=DAYS",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"news",
+						"api",
+						"v1",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "ddd"
+						},
+						{
+							"key": "N",
+							"value": "1"
+						},
+						{
+							"key": "interval",
+							"value": "DAYS"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search with  default params",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/news/api/v1/search/?q=ddd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"news",
+						"api",
+						"v1",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "ddd"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
