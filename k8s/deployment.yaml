@@ -1,0 +1,39 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: newsapi
+  namespace: default
+  labels:
+    app: newsapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: newsapi
+  template:
+    metadata:
+      labels:
+        app: newsapi
+    spec:
+      containers:
+      - name: newsapi
+        image: "jojiisacth/news-api:v6"
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            memory: 200Mi
+            cpu: 200m
+          requests:
+            memory: 200Mi
+            cpu: 200m
+        volumeMounts:
+        - name: config
+          mountPath: "/config"
+          readOnly: true
+      volumes:
+      - name: config
+        secret:
+          secretName: newsapiconfig

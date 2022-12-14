@@ -1,0 +1,23 @@
+
+pipeline {
+    agent any
+     
+     environment {
+         MY_KUBECONFIG = credentials('kubeconfigfile')
+         MY_APP_SECRET = credentials('appsecret')
+     }
+     stages {
+         stage('Example stage 1') {
+             steps {
+                    
+                       
+                        sh (" /var/lib/kubectl apply -f ./k8s/deployment.yaml --kubeconfig $MY_KUBECONFIG")
+                        sh (" /var/lib/kubectl apply -f $MY_APP_SECRET ")
+                        sh (" /var/lib/kubectl apply -f ./k8s/service.yaml  --kubeconfig $MY_KUBECONFIG")
+                 
+             }
+         }
+     }
+ }
+ 
+ 

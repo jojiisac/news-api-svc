@@ -10,7 +10,9 @@
 	</parent>
 	<properties>
 
-		<application.version>0.0.5-SNAPSHOT</application.version>
+		<application.version>0.0.6-SNAPSHOT</application.version>
+
+
 		<java.version>11</java.version>
 	</properties>
 	<groupId>co.joji</groupId>
