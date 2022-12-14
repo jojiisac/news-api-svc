@@ -9,11 +9,35 @@ This service finds relevant news for a particular keyword (Ex: “apple”). Gro
 for build run and deploy please 
 [read](docs\buildandDeply.md)
 
-## sequense diagram  
 
-See the below image for sequense diagram
+
+
+    
+
+## Architecture
+
+
+This application follows the starndard practises of software development  
+few of them are  single responsibility, dependancy injection, clean architecture,   external storage of config  etc 
+
+See the below image for architecture diagram
+
+[![sequense dia](/docs/diagrams-architecture.jpg)] (architecture)  diagrams
+
+
+## Sequence diagram  
+
+See the below image for sequence diagram
 
 
 [![sequense dia](/docs/diagrams-FullFlow.jpg)](sequense diagrams)
+
+
+
+
+
+
+
+
 
 
