@@ -7,7 +7,7 @@ This service finds relevant news for a particular keyword (Ex: “apple”). Gro
 
 ## Build, run  and deploy 
 for build run and deploy please 
-[read](docs\buildandDeply.md)
+[read](docs/buildandDeply.md)
 
 
 
